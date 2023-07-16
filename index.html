@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Bringme</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/compiled-tailwind.min.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="gradient-box w-full"></div>
+    <header class="w-full">
+      <nav class="header flex justify-between items-center bg-white">
+        <a class="text-3xl font-bold leading-none" href="#">
+          <img class="h-12" src="assets/img/BringMe_logo.png" alt="Bringme" />
+        </a>
+  
+        <!-- Navbar Button -->
+        <div class="btn-navbar lg:hidden">
+          <button class="navbar-burger flex justify-end items-end">
+            <img src="assets/img/Navbar.png" alt="" />
+          </button>
+        </div>
+  
+        <ul class="header-menu hidden header-menu lg:text-2xl lg:flex">
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">ABOUT US</a>
+          </li>
+          <li>
+            <a href="#">HOW TO ‘BRING’</a>
+          </li>
+          <li>
+            <a href="#">PARTNER</a>
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto"
+        >
+          <div class="flex items-center mb-8">
+            <img class="h-12" src="assets/img/BringMe_logo.png" alt="Bringme" />
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="#"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="#"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="#"
+                  >Pricing</a
+                >
+              </li>
+              <li class="mb-1">
+                <a
+                  class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    
+
+    <section class="body-section">
+      <section class="flex">
+        <img src="assets/img/Group.png" alt="" />
+        <p>We <span>Bring</span> Good Things to Life</p>
+      </section>
+
+      <section class="text-center">
+        <img src="assets/img/Mobile._main.png" alt="" />
+      </section>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
