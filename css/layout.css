@@ -3,16 +3,22 @@
   src: url(../assets/font/VarelarRound-Regular.ttf);
 }
 
+@font-face {
+  font-family: Prompt;
+  src: url(../assets/font/Prompt/Prompt-Regular.ttf);
+}
+
 :root {
   --green-1: #aed71d;
   --green-2: #9ac319;
   --green-3: #89b116;
   --green-4: #5a8039;
+  --green-5: #00705F;
   --bg: #FFF9F5;
 }
 
 * {
-  font-family: VarelarRound;
+  font-family: "VarelarRound", "Prompt";
 }
 
 .gradient-box {
@@ -46,17 +52,26 @@
   background-color: var(--bg);
 }
 
-section img {
-  margin-top: 46px;
+.first-section img {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  /* margin-top: 46px; */
 }
 
-section p {
-  margin: 236px 0px 0px 139px;
+.first-section p {
+  margin: 236px 0px 0px 389px;
   font-size: 50px;
-  color: #00705F;
+  color: var(--green-5);
 }
 
-section p span {
+.first-section p span {
   color: var(--green-2);
+}
+
+.first {}
+
+.second p {
+  font-size: 40px;
 }
 
