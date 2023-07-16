@@ -57,6 +57,8 @@
   background-color: var(--bg);
 }
 
+/* First Section */
+
 .first-section img {
   position: absolute;
   top: 20%;
@@ -76,7 +78,7 @@
 
 /* Second Section */
 
-.green-circle {
+.green-circle-1 {
   margin: 331px auto 0 auto;
   width: 516px;
   height: 516px;
@@ -134,6 +136,8 @@
   color: #555;
 }
 
+/* Slideshow */
+
 .slideshow-section {
   margin-top: 28px;
 }
@@ -147,6 +151,8 @@
   font-family: RedHatDisplay;
   color: #ff739a;
 }
+
+/* Download Section */
 
 .download-section {
   margin: 0 auto;
@@ -163,6 +169,50 @@
   );
 }
 
+.box-left {
+  width: 642px;
+}
+
+.box-left p {
+  color: #0b5f52;
+  font-family: Prompt;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.box-left p span {
+  font-size: 36px;
+}
+
+.box-right img {
+  /* width: 100%; */
+  position: relative;
+  bottom: 63px;
+}
+
+.green-circle-2 {
+  position: relative;
+  bottom: 0;
+  width: 349px;
+  height: 349px;
+  border-radius: 349px;
+  background: #3e6d07;
+}
+
+/* Footer */
+
 .footer {
   background-image: url(../assets/img/Footer.png);
+}
+
+/* Responsive */
+
+@media (max-width: 767) {
+  .header {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .first-section img {
+    width: 30%;
+  }
 }
