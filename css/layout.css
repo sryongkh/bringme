@@ -75,3 +75,13 @@
   font-size: 40px;
 }
 
+.categories-section {
+  width: 1112px;
+  margin-top: -33px;
+  border-radius: 35px;
+}
+
+.categories-section p {
+  color: #555;
+}
+
