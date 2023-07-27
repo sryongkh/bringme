@@ -59,17 +59,11 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 767,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },
-      },
-      {
-        breakpoint: 390,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
+      }
     ],
   });
 });
