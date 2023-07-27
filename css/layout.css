@@ -67,6 +67,10 @@ p {
   background-color: var(--bg);
 }
 
+.footer-section {
+  background-color: var(--bg);
+}
+
 /* First Section */
 .first-section p {
   color: var(--green-5);
@@ -295,8 +299,8 @@ p {
 /* Forth Section */
 
 .forth-section {
-  margin-top: 6rem;
-  margin-bottom: -2rem;
+  /* margin-top: 6rem; */
+  /* margin-bottom: -2rem; */
 }
 
 .forest-vector {
@@ -328,16 +332,16 @@ p {
 }
 
 .download-box {
+  font-family: "Prompt";
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  margin-top: 1rem;
-  padding: 59px 91px;
+  /* margin-top: 1rem; */
+  /* padding: 59px 91px; */
   /* width: 1227px; */
-  height: 479px;
+  /* height: 479px; */
   flex-shrink: 0;
-  font-family: "Prompt";
-  border-radius: 97px;
+  /* border-radius: 97px; */
   background: linear-gradient(90deg,
       rgba(174, 215, 29, 1) 0%,
       rgba(154, 195, 25, 1) 50%,
@@ -351,13 +355,11 @@ p {
 .box-left p {
   color: #0b5f52;
   font-family: Prompt;
-  font-size: 44px;
-  font-weight: 500;
-  line-height: 3rem;
+  /* line-height: 3rem; */
 }
 
 .box-left p span {
-  font-size: 36px;
+  /* font-size: 36px; */
 }
 
 .mobile-download {
@@ -370,8 +372,8 @@ p {
 .green-circle-2 {
   position: relative;
   /* bottom: 0rem; */
-  width: 22rem;
-  height: 22rem;
+  /* width: 22rem; */
+  /* height: 22rem; */
   /* border-radius: 349px; */
   background: #3e6d07;
 }
@@ -387,9 +389,9 @@ p {
   position: absolute;
   margin: 0 auto;
   width: 100%;
-  height: 360px;
-  padding: 101px 190px;
-  border-radius: 150px 150px 0px 0px;
+  /* height: 360px; */
+  /* padding: 101px 190px; */
+  /* border-radius: 150px 150px 0px 0px; */
   background-color: #003140;
   color: #fff;
   z-index: 0;
@@ -435,17 +437,17 @@ p {
 }
 
 .right-bottom-corner {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  /* position: absolute; */
+  /* right: 0; */
+  /* bottom: 0; */
 }
 
 .footer-page.web {
-  display: flex;
+  /* display: flex; */
 }
 
 .footer-page.mobile {
-  display: none;
+  /* display: none; */
 }
 
 .footer-page>div {

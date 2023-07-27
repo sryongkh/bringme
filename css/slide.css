@@ -1,13 +1,12 @@
 .wrapper {
   margin: 0 auto;
   margin-top: 18px;
-  padding: 0px 100px;
+  /* padding: 0px 100px; */
   overflow-x: hidden;
 }
 
-
 .my-slider {
-  padding: 36px 8rem;
+  /* padding: 36px 8rem; */
   overflow: hidden;
 }
 
@@ -17,7 +16,7 @@
 }
 
 .slick-initialized .slick-slide {
-  color: #FFF;
+  color: #fff;
   height: 100%;
   display: flex;
   align-items: center;
@@ -26,7 +25,8 @@
 
 .slick-dots {
   display: flex;
-  right: 1rem;
+  right: 0rem;
+  bottom: -52px;
   justify-content: center;
   margin: 0;
   padding: 3rem 0;
@@ -34,6 +34,9 @@
 }
 
 .slick-dots li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 0.25rem;
 }
 
@@ -44,12 +47,12 @@
   padding: 0;
   border: none;
   border-radius: 100%;
-  background-color: #ECECEC;
+  background-color: #ececec;
   text-indent: -9999px;
 }
 
 .slick-dots li.slick-active button {
-  background-color: #FF739A;
+  background-color: #ff739a;
 }
 
 .slick-next,
@@ -67,7 +70,7 @@
 
 .slick-next:before,
 .slick-prev:before {
-  color: #AED71D;
+  color: #aed71d;
   font-size: 26px;
 }
 
@@ -80,7 +83,7 @@
   }
 
   .my-slider {
-    padding: 55px 3rem;
+    /* padding: 55px 3rem; */
     overflow: hidden;
   }
 
