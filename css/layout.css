@@ -31,7 +31,7 @@ body {
 }
 
 img {
-  z-index: 0;
+  z-index: 1;
 }
 
 p {
@@ -40,14 +40,16 @@ p {
 
 .gradient-box {
   background: rgb(174, 215, 29);
-  background: linear-gradient(90deg,
-      rgba(174, 215, 29, 1) 0%,
-      rgba(154, 195, 25, 1) 50%,
-      rgba(137, 177, 22, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(174, 215, 29, 1) 0%,
+    rgba(154, 195, 25, 1) 50%,
+    rgba(137, 177, 22, 1) 100%
+  );
 }
 
 .header {
-  width: 100%;
+  /* width: 100%; */
   /* padding: 21px 77px 21px 59px; */
   /* padding-left: 59px;
   padding-right: 77px; */
@@ -116,6 +118,7 @@ p {
 .left-cloud,
 .right-cloud {
   position: absolute;
+  z-index: 0;
 }
 
 .free-shipping p,
@@ -127,8 +130,8 @@ p {
 }
 
 .good-qual img {
-  width: 146px;
-  height: 146px;
+  /* width: 146px; */
+  /* height: 146px; */
 }
 
 .snow {
@@ -136,27 +139,23 @@ p {
 }
 
 .snow.snow-1 {
-  right: 25px;
-  bottom: 107px;
   width: 32.01px;
   height: 36.34px;
 }
 
 .snow.snow-2 {
-  top: 105px;
-  left: 29px;
   width: 18.061px;
   height: 20.568px;
 }
 
 .easy-order {
-  top: 1063px;
-  left: 290px;
+  /* top: 1063px; */
+  /* left: 290px; */
 }
 
 .easy-order img {
-  width: 146px;
-  height: 146px;
+  /* width: 146px; */
+  /* height: 146px; */
 }
 
 .left-cloud {
@@ -187,7 +186,7 @@ p {
   /* border-radius: 35px; */
 }
 
-.categories-box>img {
+.categories-box > img {
   margin: 0 auto;
   position: relative;
   top: -36px;
@@ -230,7 +229,7 @@ p {
 }
 
 .healthy-bakery {
-  background-color: #AFCA51;
+  background-color: #afca51;
 }
 
 .bakery-pic,
@@ -244,31 +243,31 @@ p {
 }
 
 .bakery {
-  background-color: #FF9CB7;
+  background-color: #ff9cb7;
 }
 
 .healthy-food {
-  background-color: #F8E5C8;
+  background-color: #f8e5c8;
 }
 
 .drink {
-  background-color: #FFC672;
+  background-color: #ffc672;
 }
 
 .pet-stuff {
-  background-color: #FFE072;
+  background-color: #ffe072;
 }
 
 .snack {
-  background-color: #CFE7F5;
+  background-color: #cfe7f5;
 }
 
 .mom-kids {
-  background-color: #C0DA75;
+  background-color: #c0da75;
 }
 
 .fashion {
-  background-color: #FFB6B6;
+  background-color: #ffb6b6;
 }
 
 /* Slideshow */
@@ -286,7 +285,6 @@ p {
   font-family: RedHatDisplay;
   color: #ff739a;
 }
-
 
 .third-section.web {
   /* display: block; */
@@ -342,10 +340,12 @@ p {
   /* height: 479px; */
   flex-shrink: 0;
   /* border-radius: 97px; */
-  background: linear-gradient(90deg,
-      rgba(174, 215, 29, 1) 0%,
-      rgba(154, 195, 25, 1) 50%,
-      rgba(137, 177, 22, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(174, 215, 29, 1) 0%,
+    rgba(154, 195, 25, 1) 50%,
+    rgba(137, 177, 22, 1) 100%
+  );
 }
 
 .box-left {
@@ -358,15 +358,8 @@ p {
   /* line-height: 3rem; */
 }
 
-.box-left p span {
-  /* font-size: 36px; */
-}
-
 .mobile-download {
-  /* position: absolute; */
-  /* bottom: -2rem; */
-  /* right: -4rem; */
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 .green-circle-2 {
@@ -380,7 +373,6 @@ p {
 
 .right-bottom-corner {
   position: absolute;
-
 }
 
 /* Footer */
@@ -398,42 +390,42 @@ p {
 }
 
 .address-box {
-  width: 45%;
+  /* width: 45%; */
 }
 
 .address-box p,
 .about-us-box p {
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 .about-us-box {
-  width: 25%;
+  /* width: 25%; */
 }
 
 .address-box img {
-  width: 14px;
-  height: 14px;
-  margin: 1px 10px 0px 0px;
+  /* width: 14px; */
+  /* height: 14px; */
+  /* margin: 1px 10px 0px 0px; */
 }
 
 .about-us-box a,
 .address-data p,
 .contact-us-box a {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
 }
 
 .about-us-box a,
 .address-data p {
-  font-size: 12px;
+  /* font-size: 12px; */
 }
 
 .contact-us-box {
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 .contact-us-box a:nth-child(1) {
-  margin-bottom: 56px
+  /* margin-bottom: 56px */
 }
 
 .right-bottom-corner {
@@ -450,6 +442,27 @@ p {
   /* display: none; */
 }
 
-.footer-page>div {
+.footer-page > div {
   margin: 0 0.5rem;
+}
+
+.container div:nth-child(2) {
+  right: 0;
+}
+
+.container div:nth-child(3) {
+  bottom: 0;
+}
+
+/* .fade-in {
+  animation: fadeIn 3s;
+} */
+
+.navbar-menu {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.navbar-menu.show {
+  transform: translateX(0);
 }

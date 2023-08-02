@@ -1,5 +1,11 @@
 // AOS
-AOS.init();
+AOS.init({
+  // disable: function () {
+  //   let width = 768;
+  //   return window.innerWidth > width;
+  // },
+});
+
 // Burger menus
 document.addEventListener("DOMContentLoaded", function () {
   // open
@@ -63,7 +69,82 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
         },
-      }
+      },
     ],
   });
 });
+
+//Circular loop
+const container_1 = document.querySelector(".container-1");
+const container_2 = document.querySelector(".container-2");
+const container_3 = document.querySelector(".container-3");
+const circle_1 = document.querySelector(".circle-1");
+const circle_2 = document.querySelector(".circle-2");
+const circle_3 = document.querySelector(".circle-3");
+
+let rotation_1 = new TimelineMax({
+  repeat: -1,
+})
+  // .addPause(2)
+  .to(circle_1, 1, { scale: 0.5 }, 0)
+  .to(container_1, 3, { rotation: 60, transformOrigin: "center center" }, 1)
+  .to(circle_1, 3, { rotation: -60, transformOrigin: "center center" }, 1)
+  .to(circle_1, 1, { scale: 1 }, 2)
+  // .addPause(2)
+  .to(circle_1, 1, { scale: 0.5 }, 10)
+  .to(container_1, 3, { rotation: 200, transformOrigin: "center center" }, 11)
+  .to(
+    circle_1,
+    3,
+    { rotation: -200, transformOrigin: "center center", scale: 1 },
+    11
+  )
+  .to(circle_1, 1, { scale: 1 }, 12)
+  // .addPause(2)
+  .to(circle_1, 1, { scale: 0.5 }, 20)
+  .to(container_1, 3, { rotation: 360, transformOrigin: "center center" }, 21)
+  .to(
+    circle_1,
+    3,
+    { rotation: -360, transformOrigin: "center center", scale: 1 },
+    21
+  )
+  .to(circle_1, 1, { scale: 1 }, 22);
+
+let rotation_2 = new TimelineMax({
+  repeat: -1,
+})
+  // .addPause(2)
+  .to(circle_2, 1, { scale: 0.5 }, 0)
+  .to(container_2, 3, { rotation: 125, transformOrigin: "center center" }, 1)
+  .to(circle_2, 3, { rotation: -125, transformOrigin: "center center" }, 1)
+  .to(circle_2, 1, { scale: 1 }, 2)
+  // .addPause(2)
+  .to(circle_2, 1, { scale: 0.5 }, 10)
+  .to(container_2, 3, { rotation: 295, transformOrigin: "center center" }, 11)
+  .to(circle_2, 3, { rotation: -295, transformOrigin: "center center" }, 11)
+  .to(circle_2, 1, { scale: 1 }, 12)
+  // .addPause(2)
+  .to(circle_2, 1, { scale: 0.5 }, 20)
+  .to(container_2, 3, { rotation: 360, transformOrigin: "center center" }, 21)
+  .to(circle_2, 3, { rotation: -360, transformOrigin: "center center" }, 21)
+  .to(circle_2, 1, { scale: 1 }, 22);
+
+let rotation_3 = new TimelineMax({
+  repeat: -1,
+})
+  // .addPause(2)
+  .to(circle_3, 1, { scale: 0.5 }, 0)
+  .to(container_3, 3, { rotation: 175, transformOrigin: "center center" }, 1)
+  .to(circle_3, 3, { rotation: -175, transformOrigin: "center center" }, 1)
+  .to(circle_3, 1, { scale: 1 }, 2)
+  // .addPause(2)
+  .to(circle_3, 1, { scale: 0.5 }, 10)
+  .to(container_3, 3, { rotation: 230, transformOrigin: "center center" }, 11)
+  .to(circle_3, 3, { rotation: -230, transformOrigin: "center center" }, 11)
+  .to(circle_3, 1, { scale: 1 }, 12)
+  // .addPause(2)
+  .to(circle_3, 1, { scale: 0.5 }, 20)
+  .to(container_3, 3, { rotation: 360, transformOrigin: "center center" }, 21)
+  .to(circle_3, 3, { rotation: -360, transformOrigin: "center center" }, 21)
+  .to(circle_3, 1, { scale: 1 }, 22);
