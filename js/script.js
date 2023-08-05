@@ -1,5 +1,7 @@
 // AOS
-AOS.init({});
+AOS.init({
+  once: false,
+});
 
 // Burger menus
 document.addEventListener("DOMContentLoaded", function () {
@@ -133,3 +135,18 @@ let rotation_3 = new TimelineMax({
   .to(container_3, 3, { rotation: 360, transformOrigin: "center center" }, 22)
   .to(circle_3, 3, { rotation: -360, transformOrigin: "center center" }, 22)
   .to(circle_3, 1, { scale: 1 }, 24);
+
+gsap.registerPlugin(ScrollTrigger);
+
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".fade-in-from-left",
+    start: "top 50%",
+    toggleActions: "play reverse play reverse",
+  },
+});
+
+tl.from(".fade-in-from-left", { opacity: 0, x: -100, duration: 1.5 }).to(
+  ".fade-in-from-left",
+  { opacity: 1, x: 0, duration: 0.3 }
+);

@@ -26,12 +26,8 @@
   font-family: "VarelarRound", "Prompt";
 }
 
-body {
+html {
   overflow-x: hidden;
-}
-
-img {
-  z-index: 1;
 }
 
 p {
@@ -65,6 +61,11 @@ p {
   width: 35%;
 } */
 
+.fade-in-from-left {
+  /* opacity: 0; */
+  /* transform: translateX(-100px); */
+}
+
 .body-section {
   background-color: var(--bg);
 }
@@ -74,6 +75,11 @@ p {
 }
 
 /* First Section */
+
+.b-group {
+  z-index: 1;
+}
+
 .first-section p {
   color: var(--green-5);
 }
@@ -90,6 +96,7 @@ p {
   height: 516px;
   /* border-radius: 516px; */
   background: #aed71d;
+  z-index: 4;
 }
 
 .mobile_main {
@@ -140,6 +147,10 @@ p {
 .snow.snow-2 {
   width: 18.061px;
   height: 20.568px;
+}
+
+.right-cloud, .left-cloud {
+  z-index: 0;
 }
 
 /* Third Section */
@@ -322,7 +333,7 @@ p {
 }
 
 .mobile-download {
-  /* z-index: 3; */
+  z-index: 3;
 }
 
 .green-circle-2 {
@@ -416,7 +427,3 @@ p {
 .container div:nth-child(3) {
   bottom: 0;
 }
-
-/* .fade-in {
-  animation: fadeIn 3s;
-} */
