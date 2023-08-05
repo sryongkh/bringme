@@ -1,10 +1,5 @@
 // AOS
-AOS.init({
-  // disable: function () {
-  //   let width = 768;
-  //   return window.innerWidth > width;
-  // },
-});
+AOS.init({});
 
 // Burger menus
 document.addEventListener("DOMContentLoaded", function () {
@@ -89,27 +84,17 @@ let rotation_1 = new TimelineMax({
   .to(circle_1, 1, { scale: 0.5 }, 0)
   .to(container_1, 3, { rotation: 60, transformOrigin: "center center" }, 1)
   .to(circle_1, 3, { rotation: -60, transformOrigin: "center center" }, 1)
-  .to(circle_1, 1, { scale: 1 }, 2)
+  .to(circle_1, 1, { scale: 1 }, 3)
   // .addPause(2)
-  .to(circle_1, 1, { scale: 0.5 }, 10)
-  .to(container_1, 3, { rotation: 200, transformOrigin: "center center" }, 11)
-  .to(
-    circle_1,
-    3,
-    { rotation: -200, transformOrigin: "center center", scale: 1 },
-    11
-  )
-  .to(circle_1, 1, { scale: 1 }, 12)
+  .to(circle_1, 1, { scale: 0.5 }, 11)
+  .to(container_1, 3, { rotation: 200, transformOrigin: "center center" }, 12)
+  .to(circle_1, 3, { rotation: -200, transformOrigin: "center center" }, 12)
+  .to(circle_1, 1, { scale: 1 }, 14)
   // .addPause(2)
-  .to(circle_1, 1, { scale: 0.5 }, 20)
-  .to(container_1, 3, { rotation: 360, transformOrigin: "center center" }, 21)
-  .to(
-    circle_1,
-    3,
-    { rotation: -360, transformOrigin: "center center", scale: 1 },
-    21
-  )
-  .to(circle_1, 1, { scale: 1 }, 22);
+  .to(circle_1, 1, { scale: 0.5 }, 21)
+  .to(container_1, 3, { rotation: 360, transformOrigin: "center center" }, 22)
+  .to(circle_1, 3, { rotation: -360, transformOrigin: "center center" }, 22)
+  .to(circle_1, 1, { scale: 1 }, 24);
 
 let rotation_2 = new TimelineMax({
   repeat: -1,
@@ -118,17 +103,17 @@ let rotation_2 = new TimelineMax({
   .to(circle_2, 1, { scale: 0.5 }, 0)
   .to(container_2, 3, { rotation: 125, transformOrigin: "center center" }, 1)
   .to(circle_2, 3, { rotation: -125, transformOrigin: "center center" }, 1)
-  .to(circle_2, 1, { scale: 1 }, 2)
+  .to(circle_2, 1, { scale: 1 }, 3)
   // .addPause(2)
-  .to(circle_2, 1, { scale: 0.5 }, 10)
-  .to(container_2, 3, { rotation: 295, transformOrigin: "center center" }, 11)
-  .to(circle_2, 3, { rotation: -295, transformOrigin: "center center" }, 11)
-  .to(circle_2, 1, { scale: 1 }, 12)
+  .to(circle_2, 1, { scale: 0.5 }, 11)
+  .to(container_2, 3, { rotation: 295, transformOrigin: "center center" }, 12)
+  .to(circle_2, 3, { rotation: -295, transformOrigin: "center center" }, 12)
+  .to(circle_2, 1, { scale: 1 }, 14)
   // .addPause(2)
-  .to(circle_2, 1, { scale: 0.5 }, 20)
-  .to(container_2, 3, { rotation: 360, transformOrigin: "center center" }, 21)
-  .to(circle_2, 3, { rotation: -360, transformOrigin: "center center" }, 21)
-  .to(circle_2, 1, { scale: 1 }, 22);
+  .to(circle_2, 1, { scale: 0.5 }, 21)
+  .to(container_2, 3, { rotation: 360, transformOrigin: "center center" }, 22)
+  .to(circle_2, 3, { rotation: -360, transformOrigin: "center center" }, 22)
+  .to(circle_2, 1, { scale: 1 }, 24);
 
 let rotation_3 = new TimelineMax({
   repeat: -1,
@@ -137,14 +122,14 @@ let rotation_3 = new TimelineMax({
   .to(circle_3, 1, { scale: 0.5 }, 0)
   .to(container_3, 3, { rotation: 175, transformOrigin: "center center" }, 1)
   .to(circle_3, 3, { rotation: -175, transformOrigin: "center center" }, 1)
-  .to(circle_3, 1, { scale: 1 }, 2)
+  .to(circle_3, 1, { scale: 1 }, 3)
   // .addPause(2)
-  .to(circle_3, 1, { scale: 0.5 }, 10)
-  .to(container_3, 3, { rotation: 230, transformOrigin: "center center" }, 11)
-  .to(circle_3, 3, { rotation: -230, transformOrigin: "center center" }, 11)
-  .to(circle_3, 1, { scale: 1 }, 12)
+  .to(circle_3, 1, { scale: 0.5 }, 11)
+  .to(container_3, 3, { rotation: 230, transformOrigin: "center center" }, 12)
+  .to(circle_3, 3, { rotation: -230, transformOrigin: "center center" }, 12)
+  .to(circle_3, 1, { scale: 1 }, 14)
   // .addPause(2)
-  .to(circle_3, 1, { scale: 0.5 }, 20)
-  .to(container_3, 3, { rotation: 360, transformOrigin: "center center" }, 21)
-  .to(circle_3, 3, { rotation: -360, transformOrigin: "center center" }, 21)
-  .to(circle_3, 1, { scale: 1 }, 22);
+  .to(circle_3, 1, { scale: 0.5 }, 21)
+  .to(container_3, 3, { rotation: 360, transformOrigin: "center center" }, 22)
+  .to(circle_3, 3, { rotation: -360, transformOrigin: "center center" }, 22)
+  .to(circle_3, 1, { scale: 1 }, 24);
